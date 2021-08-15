@@ -1,0 +1,265 @@
+/*Navbar*/
+#navbar {
+   background: rgba(243, 239, 239);
+   position: fixed;
+   top: 0;
+   width: 100%;
+   display: block;
+   transition: top 2s;
+}
+
+/*Carousel*/
+.carousel-caption{
+   padding-bottom: 15vw;
+ }
+.carousel-caption h1{
+   font-family: 'Poppins', sans-serif;
+   color: #0e0425;
+   font-size: 4vw;
+   letter-spacing: 1px;
+   margin-bottom: 0;
+ }
+ .carousel-caption p{
+   font-family: 'Source Sans Pro', sans-serif;
+   color:rgb(10,38,68);
+   font-size: 1.5vw;
+   margin-top: 2px;
+ }
+ 
+/*Sectores*/
+.sectores{
+   padding-bottom: 30px;
+}
+
+.sectores .sectortitulo {
+padding-top: 50px;
+padding-bottom: 30px;
+}
+
+.sectores .sectortitulo h3{
+   font-family: 'Mulish', sans-serif;
+   color:rgb(0, 0, 0);
+   text-align: center;
+   font-size: 20px;
+}
+
+.sectoresfila{
+   padding: 5px;
+}
+.sectores h2{
+   font-family: 'Poppins', sans-serif;
+   color:rgb(10,38,68);
+   text-align: center;
+   font-size: 20px;
+}
+.sectores h2 a{
+   font-family: 'Source Sans Pro', sans-serif;
+   color:rgb(10,38,68);
+   text-align: center;
+}
+
+
+
+/*Contenedor Typing*/
+.contenedorTyping {
+   background: linear-gradient(70deg,#586113,#b3c52d);
+   height: 500px;
+   }
+
+.contenedorTyping p {
+   font-family: 'Poppins', sans-serif;
+   font-size: 35px;
+   margin-top: 30%;
+   color: rgba(247, 247, 247, 0.986);
+}
+
+
+/*Que hacemos*/
+.quehacemos{
+   margin-top: 30px;
+   margin-bottom: 50px;
+}
+
+.quehacemos h2{
+   font-family: 'Poppins', sans-serif;
+   color:rgb(10,38,68);
+   text-align: center;
+   font-size: 20px;
+   margin-top: 10%;   
+}
+
+.quehacemos p{
+   font-family: 'Poppins', sans-serif;
+   color:rgb(0, 0, 0);
+   text-align: center;
+   font-size: 14px;
+}
+
+.quehacemos h3{
+   font-family: 'Mulish', sans-serif;
+   color:rgb(0, 0, 0);
+   text-align: center;
+   font-size: 25px;
+}
+
+
+
+/*Contador*/
+.contador{
+   background: linear-gradient(70deg,rgb(10,38,68),rgb(41, 102, 168));
+   padding: 20px;
+}
+
+.icon-box{
+   height: 100px;
+   width: 100px;
+   margin: 20px auto;
+   transform: rotate(45deg);
+}
+
+.icon-box .fa{ 
+font-size: 40px;
+margin: 25px auto;
+color: #ffffff;
+transform: rotate(-45deg); 
+}
+
+.counter-box .superior {
+   font-size: 13px;
+   color: #fff;
+   margin: 0;
+   padding: 0;
+}
+
+.counter-box .counter {
+   font-family: 'Poppins', sans-serif;
+   font-size: 35px;
+   color: #fff;
+   margin: 0;
+   padding: 0;
+}
+
+.counter-box .inferior{
+   font-family: 'Mulish', sans-serif;
+   font-size: 25px;
+   color: #fff;
+}
+
+
+
+/*Nuestra solucion*/
+.nuestrasolucion{
+   padding: 50px;
+}
+
+.nuestrasolucion .solucion{
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+.nuestrasolucion h2{
+   font-family: 'Poppins', sans-serif;
+   color:rgb(10,38,68);
+   text-align: center;
+   font-size: 30px;
+   padding-top: 50px;
+}
+
+.nuestrasolucion p{
+   font-family: 'Source Sans Pro', sans-serif;
+   text-align: justify;
+   color:rgb(0, 0, 0);
+}
+
+.nuestrasolucion h3{
+   font-family: 'Mulish', sans-serif;
+   color:rgb(0, 0, 0);
+   text-align: center;
+   font-size: 25px;
+}
+
+/*Líderes Industriales*/
+.lideresinustria{
+   background: linear-gradient(70deg,rgb(223, 223, 223),rgb(241, 246, 252));
+   height: 250px;
+   padding: 30px;
+}
+
+.lideresinustria h2{
+   font-family: 'Mulish', sans-serif;
+   color:rgb(0, 0, 0);
+   text-align: center;
+   font-size: 25px;
+}
+
+
+
+/*Contenedor_alianzas*/
+.alianzas{
+   background: linear-gradient(70deg,rgb(255, 255, 255),rgb(255, 255, 255));
+   padding: 30px;
+}
+
+.alianzas h2{
+   font-family: 'Mulish', sans-serif;
+   color:rgb(0, 0, 0);
+   text-align: center;
+   font-size: 25px;
+}
+
+
+
+/*footer*/
+.footer p{
+   color: #999;
+   line-height: 25px;
+}
+.footer h2 {
+   color: #fff;
+   font-size:  18px;
+}
+.sectionfooter{
+   background:rgb(21, 21, 20)
+}
+.footersuperior{
+   padding-top: 80px;
+   padding-bottom: 10px;
+}
+.footerinferior{
+   background: black;
+   padding-top: 10px;
+   padding-bottom: 0;
+}
+.segmento-cuatro h2:before{
+   content: '|';
+   color:#6E76b4;
+   padding-right: 10px;
+}
+.segmento-dos ul{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+.segmento-tres h2:before{
+   content: '|';
+   color:#6E76b4;
+   padding-right: 10px;
+}
+
+
+.segmento-cuatro a:hover{
+   background:#586113;
+   width: 40px;
+   height: 40px;
+   display: inline-block;
+   border-radius: 50%;
+}
+.segmento-cuatro a i {
+   font-size: 20px;
+   color: #fff;
+   padding: 10px 12px;
+}
+
+
+
+
+

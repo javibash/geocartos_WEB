@@ -1,0 +1,619 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF=8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, maximum-scale=1.0">
+    <title>geocartos: Soluciones en Sistemas de Información Geográfica SIG, Análisis y Desarrollo de Plataformas  para Datos Espaciales</title>
+    <link rel="icon"  href="img/favicon.ico">
+
+<!--Bootstrap-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!--CSS-->
+   <link rel="stylesheet" href="css/style.css">
+<!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap" rel="stylesheet"> 
+<!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/7d054598a9.js" crossorigin="anonymous"></script>
+<!--JQuery-->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<!--Animate-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css5">    
+    <link rel="stylesheet" href="css/animate.css">
+<!--Contador-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+<!--Graficacircular-->
+    <script src="js/jquery.easypiechart.js"></script>
+<!--Google analytics-->   
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LBS3TBNT4L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LBS3TBNT4L');
+</script>
+  </head>
+  
+<body>
+  
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+    <div class="container navbar">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo_geocartos.png" width="200" height="34"  alt="">
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Soluciones
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="IngenieriayConstruccion/ingenieriayconstruccion.html">Ingeniería y Construcción</a>
+            <a class="dropdown-item" href="GobiernoySociedad/gobiernoysociedad.html">Gobierno y Sociedad</a>
+            <a class="dropdown-item" href="RecursosnaturalesyMedioambiente/recursosnaturalesyambiente.html">Recursos Naturales y Ambiente</a>
+            <a class="dropdown-item" href="LogisticayTransporte/logisticaytransporte.html">Logística y Transporte</a>
+            <a class="dropdown-item" href="NegociosyFinanzas/negociosyfinanzas.html">Negocios y Finanzas</a>
+            <a class="dropdown-item" href="Capacitacion/capacitacion.html">Capacitación</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Tecnologías
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="geografiadigital/geografiadigital.html">Geografía Digital</a>
+            <a class="dropdown-item" href="teledeteccionysensores/sensoresremotos.html">Teledetección y Sensores Remotos</a>
+            <a class="dropdown-item" href="plataformasdigitales/plataformasdigitales.html">Plataformas Digitales y Webmapping </a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <button type="button" class="btn btn-outline-secondary"><a href="contacto/contacto.html">Contacto</a></button>
+        </li>
+      </ul>
+    </div>
+    
+    </div>
+  </nav>
+
+
+<!--Carousel-->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active" >
+      <img class="d-block w-100" src="img/portadabienvenida1.png" alt="Second slide">
+      <div class="carousel-caption text-left">
+        <h1 class="animated bounceInRight" style="animation-delay: 1s;">Especialistas en manejo de <strong>geotecnologías</strong></h1>   
+        <!-- <p  class="animated bounceInLeft" style="animation-delay: 3s;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100"src="img/portadabienvenida2.png" alt="Second slide">
+      <div class="carousel-caption  text-right">
+        <h1  class="animated bounceInDown" style="animation-delay: 1s;">Creando valor mediante <strong>ubicación de información</strong></h1>
+        <!-- <p class="animated bounceInUp" style="animation-delay: 2s;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/portadabienvenida3.png" alt="Second slide">
+      <div class="carousel-caption  text-left">
+        <h1  class="animated zoomIn" style="animation-delay: 1s;">Toma decisiones con <strong>datos geoespaciales</strong></h1>
+        <!-- <p class="animated bounceInLeft" style="animation-delay: 2s;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+      </div>
+    </div>
+  </div>
+            
+</div>
+
+<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="sr-only">Next</span>
+</a>
+
+      
+<!--Sectores-->
+<div class="container sectores">
+
+  <div class="row sectortitulo">
+    <div class="col-md-12 ">     
+      <h3>SOLUCIONES PARA:</h3>
+    </div>
+  </div>
+
+  <div class="row sectoresfila">
+    <div class="col-sm-4  text-center ">
+      <img class="sectoresicono" src="img/construccion.png" alt=" ">
+      <h2 class="sectoresgeocartos"><a href="IngenieriayConstruccion/ingenieriayconstruccion.html">Ingeniería y Construcción</a></h2> 
+    </div>
+
+    <div class="col-sm-4 sectores text-center">
+      <img class="sectoresicono" src="img/gobierno.png" alt="">
+      <h2 class="sectoresgeocartos"><a href="GobiernoySociedad/gobiernoysociedad.html">Gobierno y Sociedad</a></h2>
+    </div>
+
+    <div class="col-sm-4 sectores text-center">
+      <img class="sectoresicono" src="img/logistica.png" alt="">
+      <h2 class="sectoresgeocartos"> <a href="LogisticayTransporte/logisticaytransporte.html">Logística y Transporte</a> </h2>
+    </div>
+  </div>
+
+  <div class="row sectoresfila">
+    <div class="col-sm-4  text-center ">
+      <img class="sectoresicono" src="img/ambiente.png" alt="">
+      <h2 class="sectoresgeocartos"> <a href="RecursosnaturalesyMedioambiente/recursosnaturalesyambiente.html">Recursos naturales y Medio ambiente</a> </h2>
+    </div>
+
+    <div class="col-sm-4 sectores text-center">
+      <img class="sectoresicono" src="img/negocios.png" alt="">
+      <h2 class="sectoresgeocartos"> <a href="NegociosyFinanzas/negociosyfinanzas.html">Negocios y Finanzas</a> </h2>
+    </div>
+
+    <div class="col-sm-4 sectores text-center">
+      <img class="sectoresicono" src="img/capacitacion.png" alt="">
+      <h2 class="sectoresgeocartos"> <a href="Capacitacion/capacitacion.html">Capacitación</a> </h2>
+    </div>
+  </div>
+
+</div>
+
+<!--Contenedor Typing-->   
+<section class="contenedorTyping">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-6">
+        <p> Geocartos ofrecemos <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+      </div>
+    
+      <div class="col-md-6">
+        <img src="img/somosgeocartos.png" class="img-fluid" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--Que hacemos-->   
+<section class="quehacemos">
+  <div class="container">
+    <h3>¿QUÉ HACEMOS?</h3>
+    <br>
+    <p>Geocartos es un grupo de profesionistas que ofrece soluciones mediante <strong>sistemas de información geográfica</strong> para diversos sectores. Recolectamos datos y los representamos geográficamente para dar valor agregado a la información, mejorar estrategias y guiar la toma de decisiones analizando <strong>datos espaciales</strong>.  </p>
+    <br>  
+    <div class="row clearfix">      
+            <div class="col-md-4 col-sm-8  ">
+              <div class="solucion">
+                <h2>Monitoreo de cambios</h2> 
+              </div>
+            </div>
+
+            <div class="image-column col-md-2 col-sm-4  ">
+              <div class="solucion">
+                  <img src="img/valor1.png" class="img-fluid" alt="Soluciones de datos con Drones" />
+              </div>
+            </div>
+
+            <div class="image-column col-md-2 col-sm-4  ">
+              <div class="solucion">
+                  <img src="img/valor2.png" class="img-fluid" alt="Soluciones de datos con Drones" />
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-8  ">
+              <div class="solucion">
+                <h2>Planificación y toma de decisiones</h2> 
+              </div>
+            </div>          
+        </div>
+
+        <div class="row clearfix">      
+          <div class="col-md-4 col-sm-8  ">
+            <div class="solucion">
+            <h2>Detección  de patrones y comportamiento</h2>  
+            </div>
+          </div>
+
+          <div class="image-column col-md-2 col-sm-4  ">
+            <div class="solucion">
+                <img src="img/valor3.png" class="img-fluid" alt="Soluciones de datos con Drones" />
+            </div>
+          </div>
+
+          <div class="image-column col-md-2 col-sm-4  ">
+            <div class="solucion">
+                <img src="img/valor4.png" class="img-fluid" alt="Soluciones de datos con Drones" />
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-8  ">
+            <div class="solucion">
+              <h2>Mejora de gestión y respuesta</h2>
+            </div>
+          </div>          
+      </div>
+
+      <div class="row clearfix">      
+        <div class="col-md-4 col-sm-8  ">
+          <div class="solucion">
+            <h2>Extracción, análisis y representación geográfica</h2>
+          </div>
+        </div>
+
+        <div class="image-column col-md-2 col-sm-4  ">
+          <div class="solucion">
+              <img src="img/valor5.png" class="img-fluid" alt="Soluciones de datos con Drones" />
+          </div>
+        </div>
+
+        <div class="image-column col-md-2 col-sm-4  ">
+          <div class="solucion">
+              <img src="img/valor6.png" class="img-fluid" alt="Soluciones de datos con Drones" />
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-8  ">
+          <div class="solucion">
+            <h2>Optimización de recursos</h2>   
+          </div>
+        </div>          
+    </div>
+    </div>
+</section> 
+
+
+
+<!--Contador-->
+<section class="contador">
+  <div class="container counter-section">
+    <div class="row text-center">
+      <div class="col-md-3 counter-box">
+        <div class="icon-box"><i class="fa fa-briefcase"></i></div>
+        <p class="superior">Más de </p>
+        <p class="counter">50</p>
+        <p class="inferior">Clientes Satisfechos</p>
+      </div>
+      <div class="col-md-3  counter-box">
+        <div class="icon-box"><i class="fa fa-database"></i></div>
+        <p class="superior">Más de </p>
+        <p class="counter">1500</p>
+        <p class="inferior">Tb de información procesada</p>
+      </div>
+      <div class="col-md-3 counter-box">
+        <div class="icon-box"><i class="fa fa-chart-area"></i></div>
+        <p class="superior">Más de </p>
+        <p class="counter">6000</p>
+        <p class="inferior">Datos Analizados y Ubicados</p>
+      </div>
+      <div class="col-md-3 counter-box">
+        <div class="icon-box"><i class="fa fa-trophy"></i></i></div>
+        <p class="superior">Más de </p>
+        <p class="counter">20</p>
+        <p class="inferior">Años de Experiencia Acumulada</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!--Contenedor Nuestras Soluciones-->
+<section class="nuestrasolucion">
+  <div class="container">
+    <h3>¿EN QUÉ BASAMOS NUESTRAS SOLUCIONES?</h3>
+      <div class="row clearfix">
+          
+            <div class="image-column col-md-3 col-sm-16  ">
+              <div class="solucion">
+                  <img src="img/solucionanalisisdatosgeograficos.png" class="img-fluid" alt="análisis de datos geográficos" />
+                  <h2>Datos</h2>
+                  <p>La mayoría de los datos tienen un componente geográfico. Obtenemos e integramos diferentes fuentes de <strong>datos con ubicación espacial</strong>. </p> 
+                 </div>
+            </div>
+            <div class="image-column col-md-3 col-sm-16  ">
+              <div class="solucion">
+                  <img src="img/evaluaciongeoespacial.png" class="img-fluid" alt="Evaluación de información geográfica geoespacial" />
+                  <h2>Análisis</h2>
+                 <p>Evaluamos información en términos de adecuación a necesidades para interpretar comportamientos  que servirán para toma de decisiones desde el punto de vista <strong>geoespacial</strong>. </p> 
+                </div>
+            </div>
+            <div class="image-column col-md-3 col-sm-16  ">
+              <div class="solucion">
+                  <img src="img/representaciondatosmapas.png" class="img-fluid" alt="Representación datos geoespaciales mapas" />
+                  <h2>Representación</h2>
+                 <p>Los <strong>mapas son la representación geográfica</strong> más eficiente. Permite compartir, analizar y gestionar de una manera eficiente, mediante representación  de capas de datos  o análisis de lo que desees trabajar. </p> 
+                </div>
+            </div>
+            <div class="image-column col-md-3 col-sm-16  ">
+              <div class="solucion">
+                  <img src="img/desarrollodeaplicacionesgeograficas.png" class="img-fluid" alt="Desarrollo de aplicaciones WEB y mobiles SIG" />
+                  <h2>Aplicaciones</h2>
+                 <p>Proporcionamos experiencias de usuario para disponer de información <strong>SIG</strong> en cualquier momento y lugar, mediante aplicaciones móviles y WEB.</p>
+                </div>
+            </div>
+
+
+
+     
+
+        </div>
+        
+    </div>
+</section> 
+
+
+
+<!--Líderes Industriales-->   
+<section class="lideresinustria col-sm-12">
+  <div class="container">
+    <div class="row align-items-center justify-content-center  ">
+      <h2>CON LA CONFIANZA DE LOS LÍDERES DE LA INDUSTRIA</h2>
+    </div>
+    <div class="row align-items-center justify-content-center">
+
+      <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+        <!-- Brand -->
+        <div>
+          <img src="img/qgis.png" class="img-fluid" alt="QGIS"> 
+           </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+        <!-- Brand -->
+        <div>
+          <img src="img/arcgis.png" class="img-fluid" alt="arcgis"> 
+           </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+        <!-- Brand -->
+        <div>
+          <img src="img/carto.png" class="img-fluid" alt="CARTO"> 
+           </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+        <!-- Brand -->
+        <div>
+          <img src="img/hexagon.png" class="img-fluid" alt="HEXAGON"> 
+           </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+        <!-- Brand -->
+        <div>
+          <img src="img/google.png" class="img-fluid" alt="QGIS"> 
+           </div>
+      </div>
+
+  </div> <!-- / .container -->
+</section>
+
+<!--Logos de alianzas-->   
+<section class="alianzas py-6 py-md-8 ">
+  <div class="container">
+    <div class="row align-items-center justify-content-center  ">
+      <h2>ALIANZAS</h2>
+    </div>
+    <div class="row align-items-center justify-content-center">
+
+
+      <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+        <!-- Brand -->
+        <div>
+          <img src="img/lnssupercomputo.svg" class="img-fluid" alt="INS Supercomputo BUAP"> 
+           </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+        <!-- Brand -->
+        <div>
+          <img src="img/skyprecision.svg" class="img-fluid" alt="skyprecision"> 
+           </div>
+      </div>
+
+
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+</section>
+ 
+
+
+
+<!-- Footer -->  
+<footer>
+  <section class="footer sectionfooter">
+    <div class="container" >
+      <div class="row footersuperior">
+        <div class="col-md-3 col-sm-6 col-xs-12 segmento-uno md-mb-30 sm-mb-30">
+          <img src="img/logo_geocartos.png" width="200" height="34"  alt="">
+          <p>GIS for everyone, anywhere</p>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 segmento-dos md-mb-30 sm-mb-30">
+          <ul>
+            <li><p><i class="fas fa-map-marker-alt"></i>   Prol. 11 Sur 4701 Reforma Agua Azul, 72430 Puebla, Pue.</p></li>
+            <li><p><i class="fas fa-phone-alt"></i> Telefonos: +52 22 22 54 07 75 / +52 22 24 39 76 47</p></li>
+            <li><p><i class="far fa-envelope"></i> geocartosmx@outlook.com</p></li>
+          </ul>
+
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 segmento-tres sm-mb-30">
+
+          
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 segmento-cuatro sm-mb-30">
+          <h2>Redes sociales</h2>
+          <p>Siguenos en nuestras redes sociales</p>
+          <a href="https://www.facebook.com/geocartos" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/company/geocartos"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row footerinferior">
+        <div class="col-md-10">
+          <p class="footer-bottom-text">  &copy; 2021 Geocartos S.A. de C.V. Todos los derechos reservados. </p>
+        </div>
+        <div class="col-md-2">
+          <a class="text-secondary" href="privacidad/privacidad.html">Privacidad</a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+</footer>
+
+
+<!--Javascript-->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+ 
+<!--Configuracion Navbar-->
+<script type="text/javascript">
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+      var currentScrollpos = window.pageYOffset;
+      if(prevScrollpos > currentScrollpos) {
+            document.getElementById("navbar").style.top = "0";
+      } else {
+            document.getElementById("navbar").style.top = "-130px";
+      }
+      prevScrollpos = currentScrollpos;
+      } 
+</script>
+
+
+<!--Configuracion Contadores-->
+<script>
+  jQuery(document).ready(function ( $ )
+  {
+  $('.counter').counterUp({
+    delay: 10,
+    time: 1000
+    });
+  });
+</script>
+
+<!--Configuracion Grafica Circular-->
+<script>
+  $(function(){
+    $('.chart').easyPieChart({
+     size:150,
+     barColor:'#17c2a4',
+     scaleColor:false,
+     lineWidth:10,
+     trackColor:'#ecf0f1',
+     lineCap:'circle',
+     animate:1700
+    })
+  })
+ </script>
+
+
+
+
+<!--Typing-->
+<script>
+  const typedTextSpan = document.querySelector(".typed-text");
+const cursorSpan = document.querySelector(".cursor");
+
+const textArray = ["gestión e integración de datos espaciales", "mapeo y visualización de datos", "análisis y modelado geográfico", "planeación y diseño geoespacial"];
+const typingDelay = 100;
+const erasingDelay = 50;
+const newTextDelay = 500; // Delay between current and next text
+let textArrayIndex = 0;
+let charIndex = 0;
+
+
+
+
+
+function type() {
+  if (charIndex < textArray[textArrayIndex].length) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+  	setTimeout(erase, newTextDelay);
+  }
+}
+
+function erase() {
+	if (charIndex > 0) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+    textArrayIndex++;
+    if(textArrayIndex>=textArray.length) textArrayIndex=0;
+    setTimeout(type, typingDelay + 1100);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+  if(textArray.length) setTimeout(type, newTextDelay + 250);
+});
+</script>
+
+
+
+<!-- Messenger plugin de chat Code -->
+<div id="fb-root"></div>
+
+<!-- Your plugin de chat code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "115470646821081");
+  chatbox.setAttribute("attribution", "biz_inbox");
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v11.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+</body>
+</html>
